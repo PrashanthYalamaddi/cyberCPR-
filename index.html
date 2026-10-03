@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shield.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberCPR | Cyber Incident Response Planner & Algorithmic Containment Engine</title>
+    <meta name="description" content="Prioritize cyber incidents and model system dependencies to compute optimal containment sequences and least-disruption network routes using Priority Queues, Kahn's Topological Sort, BFS, and Dijkstra's algorithm." />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('cybercpr_theme') || localStorage.getItem('aegisflow_theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Preconnect to Google Fonts for Playfair Display, Plus Jakarta Sans, and JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased bg-[#3F0D1B] text-[#D8CBB5] selection:bg-[#D8CBB5]/30 selection:text-[#FAF6EE] min-h-[100dvh]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

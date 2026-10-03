@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-burgundy-deep: #3F0D1B;
+  --color-burgundy-darkest: #2C0712;
+  --color-burgundy-surface: #4C1222;
+  --color-ivory-aged: #D8CBB5;
+  --color-ivory-light: #F4EEE4;
+  --color-ivory-surface: #EDE4D6;
+  --color-ivory-text: #FAF6EE;
+  --color-border-burgundy: #5C1D2D;
+  --color-border-ivory: #CDBFA7;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Precise scrollbar adapting smoothly to dark burgundy and aged ivory */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #2C0712;
+}
+::-webkit-scrollbar-thumb {
+  background: #732238;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D8CBB5;
+}
+
+/* Canvas styling */
+.topology-canvas {
+  cursor: grab;
+}
+.topology-canvas:active {
+  cursor: grabbing;
+}
